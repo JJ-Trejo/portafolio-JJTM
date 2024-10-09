@@ -1,0 +1,7 @@
+.presentacion__imagen{
+    width: 368px;
+}
+
+.presentacion__imagen img{
+    border-radius: 50%;
+}
