@@ -1,7 +1,172 @@
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: var(--azul-claro);
+    /* position: relative; */
+    max-width: 100%;
+    width: auto;
+    height: 100vh;
+    /* overflow: auto; */
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    box-sizing: border-box;
+    border: 2px solid #ff6347;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.nombre{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nav_lista_elemento{
+    display: none;
+}
+
+.nav_lista_email{
+    font-weight: 400;
+    font: 40px;
+}
+
+/* >>>>>>>>>>>> MAIN - PRESENTACIÓN*/
+
+.presentacion{
+    padding: 16px;
+    border: 2px solid #ff6347;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.presentacion__container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.presentacion__jose{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.presentacion__resumen{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.presentacion__redes{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.presentacion__redes ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    /* gap: 8px; */
+}
+
 .presentacion__imagen{
-    width: 368px;
+    width: 98px;
+    order: -1;
 }
 
 .presentacion__imagen img{
     border-radius: 50%;
+}
+
+/* >>>>>>>>>>>> MAIN - SOBRE MI*/
+
+.sobremi{
+    border: 2px solid #ff6347;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #EAF2FD;
+}
+
+.sobremi h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.sobremi p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* >>>>>>>>>>>> MAIN - SKILLS*/
+.skills,
+.hobbies{
+    border: 2px solid #ff6347;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.skills_lista,
+.hobbies_lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.skills_titulo,
+.hobbies_titulo{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.skills_elemento,
+.hobbies_elemento{
+    width: 40%;
+    border: 2px solid #ff6347;
+    padding: 38px 0 16px 16px;
+}
+
+.skills_elemento img,
+.hobbies_elemento img{
+    width: 30px;
+}
+
+.imagen_html{
+    width: 60px;
+}
+
+.skills_elemento p,
+.hobbies_elemento p{
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+
+
+/* >>>>>>>>>>>> FORMACION ACADEMICA*/
+.formacion{
+    background-color: #EAF2FD;
+}
+
+
+/* >>>>>>>>>>>> CONTACTO*/
+.contacto{
+    background-color: #EAF2FD;
+}
+
+
+/* >>>>>>>>>>>> FOOTER*/
+
+footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }

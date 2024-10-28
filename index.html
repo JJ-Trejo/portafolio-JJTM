@@ -6,20 +6,23 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
     <header>
         <div>
-            <h1>Ing. José de Jesús T.M.</h1>
+            <h1 class="nombre">Ing. José T.M.</h1>
         </div>
-        <nav>
-            <ul>
-                <li> <a href="./sobremi.html"> Sobre mí </a> </li>
-                <li> <a href="./skills.html"> Skills </a> </li>
-                <li> <a href="./hobbies.html"> Hobbies </a> </li>
-                <li> <a href="./formacion.html"> Formación </a> </li>
-                <li> <a href="./proyectos.html"> Proyectos </a> </li>
-                <li> <p>josedejesus216@hotmail.com</p> </li>
+        <nav class="container_nav">
+            <ul class="container_nav_lista">
+                <li class="nav_lista_elemento"> <a href="./sobremi.html"> Sobre mí </a> </li>
+                <li class="nav_lista_elemento"> <a href="./skills.html"> Skills </a> </li>
+                <li class="nav_lista_elemento"> <a href="./hobbies.html"> Hobbies </a> </li>
+                <li class="nav_lista_elemento"> <a href="./formacion.html"> Formación </a> </li>
+                <li class="nav_lista_elemento"> <a href="./proyectos.html"> Proyectos </a> </li>
+                <li class="nav_lista_email"> <p>josedejesus216@hotmail.com</p> </li>
             </ul>
         </nav>
     </header>
@@ -38,10 +41,11 @@
                 </div>
                 <div class="presentacion__redes">
                     <ul>
-                        <li> <a href="">Github</a> </li>
-                        <li> <a href="">Linkedin</a> </li>
-                        <li> <a href="">Instagram</a> </li>
-                        <li> <a href="">Curriculum</a> </li>
+                        <li> <a href="">Github</a> <img src="./assets/flecha_link.png" alt="Icono de flecha"></li>
+                        <li> <a href="">Linkedin</a> <img src="./assets/flecha_link.png" alt="Icono de flecha"></li>
+                        <li> <a href="">Instagram</a> <img src="./assets/flecha_link.png" alt="Icono de flecha"></li>
+                        <li> <a href="">Curriculum</a> <img src="./assets/flecha_link.png" alt="Icono de flecha"></li>
+                        <!-- <img src="./assets/flecha_link.png" alt="Icono de flecha">  -->
                     </ul>
 
                 </div>
@@ -57,40 +61,98 @@
 
         </section>
         <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Html 5</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Node JS</li>
-                <li>React</li>
-                <li>CSS</li>
+            <h2 class="skills_titulo">Skills</h2>
+            <ul class="skills_lista">
+                <li class="skills_elemento">
+                        <img src="./assets/html_logo.png" alt="imagen HTML 5">
+                        <p>Html 5</p>
+                </li>
+                <li class="skills_elemento">
+                        <img src="./assets/css_logo.png" alt="imagen logo css">
+                        <p>CSS</p>
+                </li>
+                <li class="skills_elemento">
+                        <img src="./assets/javascript_logo2.png" alt="imagen logo javascript">
+                        <p>JavaScript</p>
+                </li>
+                <li class="skills_elemento">
+                        <img src="./assets/fortran_logo.png" alt="imagen logo fortran">
+                        <p>Fortran</p>
+                </li>
+                <li class="skills_elemento">
+                        <img src="./assets/python_logo2.png" alt="imagen logo pythom">
+                        <p>Python</p>
+                </li>
+                <li class="skills_elemento">
+                        <img src="./assets/tkinter_logo.png" alt="imagen logo tkinter">
+                        <p>Tkinter</p>
+                </li>         
             </ul>
         </section>
         <section class="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Patinaje</li>
-                <li>Tocar bajo</li>
-                <li>Oír música</li>
-                <li>Ver series</li>
-                <li>Cocinar</li>
-                <li>Toamr fotos</li>
+            <h2 class="hobbies_titulo">Hobbies</h2>
+            <ul class="hobbies_lista">
+                <li class="hobbies_elemento">
+                    <img src="" alt="imagen gym">
+                    <p>Gimnasio</p>
+                </li> 
+                <li class="hobbies_elemento">
+                    <img src="" alt="imagen series">
+                    <p>Ver series</p>
+                </li> 
+                <li class="hobbies_elemento">
+                    <img src="" alt="imagen programacion">
+                    <p>Programar</p>
+                </li> 
+                <li class="hobbies_elemento">
+                    <img src="" alt="imagen cocina">
+                    <p>Cocinar</p>
+                </li> 
             </ul>
 
         </section>
         <section class="formacion">
+            <h2>Formación académica</h2>
+
+            <div>
+                <img src="" alt="">
+                <p>Formación Front End</p>
+                <p>En curso</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p>Ingeniería eléctrica</p>
+                <p>2024 - Universidad Autónoma Metropolitana</p>
+            </div>
 
         </section>
         <section class="experiencia">
+            <h2>Experiencia profesional</h2>
+
+            <div>
+                <img src="" alt="">
+                <p>Encriptador de texto</p>
+                <p>Challenge Oracle</p>
+            </div>
+
+            <div>
+                <img src="" alt="">
+                <p>Cálculo de arco eléctrico con Python y Tkinter</p>
+                <p>Proyecto de integración - UAM</p>
+            </div>
 
         </section>
-        <section class="Contacto">
+        <section class="contacto">
+            <div>
+                <p>¿Quieres contactarme?</p>
+                <p>complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+                <div></div>
+            </div>
 
         </section>
     </main>
     <footer>
-
+        <p>Developed by José T.M. - 2024</p>
     </footer>
     
 </body>
