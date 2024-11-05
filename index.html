@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <div>
             <h1 class="nombre">Ing. José T.M.</h1>
         </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="presentacion__resumen">
                     <p>
-                        Soy recién egresado de Ingeniería Eléctrica y actualmente estoy participando en el proyecto Oracle One en Alura Latam
+                        Soy recién egresado de Ingeniería Eléctrica y actualmente estoy participando en el proyecto Oracle One en Alura Latam para formarme como desarrollador web Front-end
                     </p>
                 </div>
                 <div class="presentacion__redes">
@@ -57,33 +57,36 @@
         </section>
         <section class="sobremi">
             <h2>Sobre mí</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus exercitationem quisquam delectus vel ratione, tempore rerum consequatur aut ipsa. Expedita reiciendis numquam est iste facere eligendi accusantium officiis sapiente. Iusto?</p>
+            <p> Me apasiona la programación y el desarrollo web, incluso mi proyecto de integración de ingeniería fue en parte
+                con programación en Python y tkinter. Actualmente busco una oportunidad para demostrar mis habilidades como desarrollador web
+                y seguir formandome en este ámbito. 
+            </p>
 
         </section>
         <section class="skills">
             <h2 class="skills_titulo">Skills</h2>
             <ul class="skills_lista">
-                <li class="skills_elemento">
+                <li class="skills_elemento  skills_elemento--html">
                         <img src="./assets/html_logo.png" alt="imagen HTML 5">
                         <p>Html 5</p>
                 </li>
-                <li class="skills_elemento">
+                <li class="skills_elemento  skills_css">
                         <img src="./assets/css_logo.png" alt="imagen logo css">
                         <p>CSS</p>
                 </li>
-                <li class="skills_elemento">
+                <li class="skills_elemento  skills_java">
                         <img src="./assets/javascript_logo2.png" alt="imagen logo javascript">
                         <p>JavaScript</p>
                 </li>
-                <li class="skills_elemento">
+                <li class="skills_elemento  skills_fortran">
                         <img src="./assets/fortran_logo.png" alt="imagen logo fortran">
                         <p>Fortran</p>
                 </li>
-                <li class="skills_elemento">
-                        <img src="./assets/python_logo2.png" alt="imagen logo pythom">
+                <li class="skills_elemento  skills_python">
+                        <img src="./assets/python_logo2.png" alt="imagen logo python">
                         <p>Python</p>
                 </li>
-                <li class="skills_elemento">
+                <li class="skills_elemento  skills_tkinter">
                         <img src="./assets/tkinter_logo.png" alt="imagen logo tkinter">
                         <p>Tkinter</p>
                 </li>         
@@ -92,67 +95,131 @@
         <section class="hobbies">
             <h2 class="hobbies_titulo">Hobbies</h2>
             <ul class="hobbies_lista">
-                <li class="hobbies_elemento">
-                    <img src="" alt="imagen gym">
+                <li class="hobbies_elemento  hobbies_gym">
+                    <img src="./assets/gym_logo2.png" alt="imagen_gym">
                     <p>Gimnasio</p>
                 </li> 
-                <li class="hobbies_elemento">
-                    <img src="" alt="imagen series">
+                <li class="hobbies_elemento  hobbies_tv">
+                    <img src="./assets/tv_logo.png" alt="imagen_series">
                     <p>Ver series</p>
                 </li> 
-                <li class="hobbies_elemento">
-                    <img src="" alt="imagen programacion">
+                <li class="hobbies_elemento  hobbies_programacion">
+                    <img src="./assets/programar_logo.png" alt="imagen_programacion">
                     <p>Programar</p>
                 </li> 
-                <li class="hobbies_elemento">
-                    <img src="" alt="imagen cocina">
+                <li class="hobbies_elemento  hobbies_cocina">
+                    <img src="./assets/cocinar_logo.png" alt="imagen_cocina">
                     <p>Cocinar</p>
                 </li> 
             </ul>
 
         </section>
         <section class="formacion">
-            <h2>Formación académica</h2>
-
-            <div>
-                <img src="" alt="">
-                <p>Formación Front End</p>
-                <p>En curso</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Ingeniería eléctrica</p>
-                <p>2024 - Universidad Autónoma Metropolitana</p>
-            </div>
+            <h2 class="formacion_titulo">Formación académica</h2>
+            <ul class="formacion_lista">
+                <li class="formacion_elemento">
+                    <div class="formacion_imagen  formacion_elemento--alura">
+                        <img src="./assets/aluraoracle.png" alt="logo alura">
+                    </div>
+                    <h3>Formación Front End</h3>
+                    <p>En curso</p>
+                </li>
+                <li class="formacion_elemento">
+                    <div class="formacion_imagen  formacion_elemento--uam">
+                        <img src="./assets/uam_logo.jpg" alt="logo UAM">
+                    </div>
+                    <h3>Ingeniería eléctrica</h3>
+                    <p>2024 - Universidad Autónoma Metropolitana</p>
+                </li>
+            </ul>
 
         </section>
         <section class="experiencia">
-            <h2>Experiencia profesional</h2>
-
-            <div>
-                <img src="" alt="">
-                <p>Encriptador de texto</p>
-                <p>Challenge Oracle</p>
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <p>Cálculo de arco eléctrico con Python y Tkinter</p>
-                <p>Proyecto de integración - UAM</p>
-            </div>
-
+            <h2 class="experiencia_titulo">Experiencia profesional</h2>
+            <ul class="experiencia_lista">
+                <li class="experiencia_elemento">
+                    <div class="experiencia_imagen  experiencia_elemento--encriptador">
+                        <img src="./assets/encriptador.png" alt="Imagen encriptador de texto">
+                    </div>
+                    <div class="container_texto_encriptador">
+                        <h3>Encriptador de texto</h3>
+                        <p>Challenge Oracle</p>
+                        <div class="experiencia_boton">
+                            <a href="https://github.com/JJ-Trejo/Encriptador.git" class="boton_repo_encriptador">Repositorio</a>
+                            <a href="google.https://encriptador-two-roan.vercel.app/" class="boton_demo_encriptador">Ver demo</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="experiencia_elemento">
+                    <div class="experiencia_imagen  experiencia_elemento--arco">
+                        <img src="./assets/arco_electrico.png" alt="logo UAM">
+                    </div>
+                    <div class="container_texto_arco">
+                        <h3>Cálculo de arco eléctrico con Python y Tkinter</h3>
+                        <p>Proyecto de integración - UAM</p>
+                        <div class="experiencia_boton">
+                            <a href="" class="boton_repo_arco">Repositorio</a>
+                            <a href="" class="boton_demo_arco">Ver demo</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="experiencia_elemento">
+                    <div class="experiencia_imagen  experiencia_elemento--tkd">
+                        <img src="./assets/tkd_programa.png" alt="Imagen programa de puntuación TKD">
+                    </div>
+                    <div class="container_texto_tkd">
+                        <h3>Software Puntuación Taekowndo con Python y Tkinter</h3>
+                        <p>Aplicación de escritorio para puntuar enfrentamientos de Taekowndo mediante un control</p>
+                        <div class="experiencia_boton">
+                            <a href="" class="boton_repo_tkd">Repositorio</a>
+                            <a href="" class="boton_demo_tkd">Ver demo</a>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
         </section>
         <section class="contacto">
-            <div>
-                <p>¿Quieres contactarme?</p>
-                <p>complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
-                <div></div>
-            </div>
+            <header class="contacto__titulo">
+                <h3 class="contacto__titulo--texto">Contacto</h3>
+                <p class="contacto__descripcion--texto contacto__descripcion--p1">¿Quieres contactarme?</p>
+                <p class="contacto__descripcion--texto contacto__descripcion--p2">complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+            </header>
+            <form action="" class="contacto__formulario">
+                <img src="./assets/imagen_phone.png" alt="">
+                <ul class="contacto__formulario--datos">
+                    <li class="contacto__formulario--nombre  contacto_elemento">
+                        <label for="formulario__nombre" class="label_nombre">Nombre</label>
+                        <input type="text" placeholder="Tu nombre" id="formulario__nombre">
+                    </li>
+                    <li class="contacto__formulario--correo  contacto_elemento">
+                        <label for="formulario__correo" class="label_email">E-mail</label>
+                        <input type="text" placeholder="E-mail" id="formulario__correo">
+                    </li>
+                    <li class="contacto__formulario--asunto  contacto_elemento">
+                        <label for="formulario__asunto" class="label_asunto">Asunto</label>
+                        <input type="text" placeholder="Asunto" id="formulario__asunto">
+                    </li>
+                    </li>
+                    <li class="contacto__formulario--mensaje  contacto_elemento">
+                        <label for="formulario__mensaje" class="label_mensaje">Mensaje</label>
+                        <textarea placeholder="Mensaje" id="formulario__mensaje"></textarea>
+                    </li>
+
+
+                    <div class="container_boton_contacto">
+                        <button class="contacto__formulario--boton">
+                            Enviar mensaje!
+                        </button>
+                    </div>
+                </ul>
+            </form>
 
         </section>
     </main>
     <footer>
-        <p>Developed by José T.M. - 2024</p>
+        <p>Developed by José T.M.</p>
+        <p>2024</p>
     </footer>
     
 </body>

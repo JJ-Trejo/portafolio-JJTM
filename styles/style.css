@@ -1,8 +1,8 @@
 body{
     font-family: "Raleway", sans-serif;
-    background-color: var(--azul-claro);
+    background-color: #F5F5F5;
     /* position: relative; */
-    max-width: 100%;
+    max-width: 1440px;
     width: auto;
     height: 100vh;
     /* overflow: auto; */
@@ -12,9 +12,8 @@ body{
     flex-direction: column;
 }
 
-header{
+.encabezado{
     box-sizing: border-box;
-    border: 2px solid #ff6347;
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -38,7 +37,7 @@ header{
 
 .presentacion{
     padding: 16px;
-    border: 2px solid #ff6347;
+    
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -72,6 +71,11 @@ header{
     /* gap: 8px; */
 }
 
+.presentacion__redes ul li{
+    display: flex;
+    justify-content: center;
+}
+
 .presentacion__imagen{
     width: 98px;
     order: -1;
@@ -84,7 +88,6 @@ header{
 /* >>>>>>>>>>>> MAIN - SOBRE MI*/
 
 .sobremi{
-    border: 2px solid #ff6347;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -104,13 +107,13 @@ header{
 
 /* >>>>>>>>>>>> MAIN - SKILLS*/
 .skills,
-.hobbies{
-    border: 2px solid #ff6347;
+.hobbies,
+.formacion{
     display: flex;
     padding: 16px;
     flex-direction: column;
     align-items: center;
-    
+    gap: 32px;
 }
 
 .skills_lista,
@@ -122,7 +125,9 @@ header{
 }
 
 .skills_titulo,
-.hobbies_titulo{
+.hobbies_titulo,
+.formacion_titulo,
+.experiencia_titulo{
     font-weight: 700;
     font-size: 22px;
 }
@@ -130,8 +135,8 @@ header{
 .skills_elemento,
 .hobbies_elemento{
     width: 40%;
-    border: 2px solid #ff6347;
     padding: 38px 0 16px 16px;
+    background-color: white;
 }
 
 .skills_elemento img,
@@ -139,8 +144,8 @@ header{
     width: 30px;
 }
 
-.imagen_html{
-    width: 60px;
+.skills_elemento--html img{
+    width: 50px;
 }
 
 .skills_elemento p,
@@ -150,18 +155,245 @@ header{
     padding-top: 8px;
 }
 
+.skills_java img{
+    width: 45px;
+}
+
+.skills_fortran img{
+    width: 40px;
+    padding-top: 5px;
+}
+
+.skills_python img{
+    width: 35px;
+}
+
+/* >>>>>>>>>>>> FORMACION HOBBIES*/
+
+.hobbies_gym img{
+    width: 50px;
+}
+
+.hobbies_tv img{
+    width: 52px;
+}
+
+.hobbies_programacion img{
+    width: 40px;
+}
+
+.hobbies_cocina img{
+    width: 45px;
+}
+
+
 
 
 /* >>>>>>>>>>>> FORMACION ACADEMICA*/
 .formacion{
     background-color: #EAF2FD;
+    padding: 32px;
 }
+
+.formacion_lista{
+    width: 100%;
+}
+
+.formacion_elemento{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.formacion_elemento--uam img{
+    width: 200px;
+}
+
+.formacion_elemento--alura img{
+    width: 200px;
+    height: 80px;
+}
+
+.formacion_imagen{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 150px;
+    align-items: center;
+}
+
+.formacion_elemento h3,
+.experiencia_elemento h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.formacion_elemento p,
+.experiencia_elemento p{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* >>>>>>>>>>>> EXPERIENCIA PROFESIONAL*/
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.experiencia_titulo{
+    text-align: center;
+}
+
+.experiencia_lista{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.experiencia_elemento{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experiencia_imagen{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+}
+
+.experiencia_imagen img{
+    width: 90%;
+}
+
+/* >>>>>>>>>>>> EXPERIENCIA PROFESIONAL - BOTONES*/
+.container_texto_encriptador,
+.container_texto_arco,
+.container_texto_tkd{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experiencia_boton{
+    display: flex;
+    gap: 16px;
+}
+
+.boton_repo_encriptador,
+.boton_repo_arco,
+.boton_repo_tkd{
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    padding: 12px 16px;
+}
+
+.boton_demo_encriptador,
+.boton_demo_arco,
+.boton_demo_tkd{
+    background-color: #2A7AE4;
+    color: white;
+    padding: 12px 16px;
+}
+
+
+
+
+
+
+
+
 
 
 /* >>>>>>>>>>>> CONTACTO*/
 .contacto{
     background-color: #EAF2FD;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
+
+.contacto__titulo--texto{
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+.contacto__descripcion--texto{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contacto__descripcion--p1{
+    padding-bottom: 4px;
+}
+
+.contacto__formulario img{
+    display: none;
+}
+
+.contacto__formulario--datos{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    box-sizing: content-box;
+}
+
+.contacto_elemento{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto__formulario--datos label{
+    font-weight: 400;
+    font-size: 12px;
+    width: auto;
+    padding: 6px 12px;
+    color: #A2A2A2;
+}
+
+/* Afecta al texto que se escribe en los textarea & input */
+.contacto__formulario--datos input,
+.contacto__formulario--datos textarea{
+    width: auto;
+    padding: 6px 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container_boton_contacto{
+    text-align: center;
+}
+
+/* No muestra los label de Asunto y Mensaje */
+.contacto__formulario--asunto label,
+.contacto__formulario--mensaje label{
+    display: none;
+}
+
+#formulario__asunto{
+    height: 42px;
+}
+
+#formulario__mensaje{
+    height: 100px;
+}
+
+.contacto__formulario--boton{
+    background-color: #2A7AE4;
+    color: white;
+    padding: 12px 16px;
+}
+
+
 
 
 /* >>>>>>>>>>>> FOOTER*/
@@ -169,4 +401,173 @@ header{
 footer{
     padding-top: 32px;
     padding-bottom: 32px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+}
+
+
+
+
+
+/* Media Queries */
+/* pagina responsiva - celulares a partir de width: 375px */
+/* @media(max-width: 375px){ o 360 px también
+} */
+
+
+/*Se desaparece la busqueda cuando la pantalla es igual o mayor que 834px*/
+/* o 768 px? */
+@media (min-width: 834px){   
+    .presentacion{
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .presentacion__imagen{
+        width: 150px;
+        order: 1;
+    }
+
+
+    .presentacion__container{
+        justify-content: center;
+    }
+
+    .experiencia_elemento p,
+    .sobremi p,
+    .presentacion__resumen,
+    .presentacion__redes ul{
+        font-size: 16px;
+    }
+
+    .skills_lista,
+    .hobbies_lista{
+        width: 100%;
+    }
+
+    .skills_elemento,
+    .hobbies_elemento{
+        width: 25%;
+    }
+
+    .formacion_lista{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .formacion_elemento{
+        width: 100%;
+    }
+
+    .nav_lista_email{
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .nombre{
+        font-size: 16px;
+    }
+
+
+}
+
+/* Ancho por defecto para computadoras de escritorio */
+@media (min-width: 1240px){
+    .presentacion__container{
+        gap: 24px;
+    }
+
+    .presentacion__jose h1{
+        font-weight: 700;
+        font-size: 52px;
+    }
+
+    .presentacion__resumen p{
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .presentacion__redes ul{
+        justify-content: left;
+        gap: 60px;
+    }
+
+    .presentacion__imagen{
+        width: 368px;
+    }
+
+    .container_nav_lista{
+        display: flex;
+        gap: 32px;
+    }
+
+    .nav_lista_elemento{
+        display: block;
+        font-size: 16px;
+    }
+
+    .sobremi h2{
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .sobremi p{
+        font-weight: 400;
+        font-size: 16px;
+        width: 70%;
+        justify-content: left;
+    }
+
+    .skills_lista,
+    .hobbies_lista{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .skills_elemento,
+    .hobbies_elemento{
+        width: 100%;
+
+    }
+
+    .skills_titulo,
+    .hobbies_titulo,
+    .formacion_titulo,
+    .experiencia_titulo{
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .experiencia{
+        gap: 32px;
+    }
+
+    .experiencia_imagen{
+        width: 60%;
+    }
+    .experiencia_elemento{
+        flex-direction: row;
+    }
+
+    .container_texto_encriptador,
+    .container_texto_arco,
+    .container_texto_tkd{
+        justify-content: center;
+        width: 40%;
+    }
+
+    .container_texto_arco{
+        order: -1;
+    }
+
 }
