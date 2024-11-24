@@ -1,6 +1,16 @@
+:root{ /*Declaracion de variables*/
+    --fuente-texto: "Rsleway", sans-serif;
+    --color-primario: #F5F5F5;  /*color fondo*/
+    --color-secundario:  #EAF2FD;  /*Fondo Sobre mi, Formacion academica, Contacto*/
+    --color-terciario: white; /*Fondo elemnots skills y hobbies*/
+    --color-cuaternario: #2A7AE4; /*fondo Botones y contorno*/ 
+    --color-quinto: #A2A2A2; /*Letras placeholder contacto*/
+    --color-sexto: #495057; /*texto de informacion y texto de salida*/
+}
+
 body{
-    font-family: "Raleway", sans-serif;
-    background-color: #F5F5F5;
+    font-family: var(--fuente-texto);
+    background-color: var(--color-primario);
     /* position: relative; */
     max-width: 1440px;
     width: auto;
@@ -10,6 +20,7 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .encabezado{
@@ -92,7 +103,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: #EAF2FD;
+    background-color: var(--color-secundario);
 }
 
 .sobremi h2{
@@ -136,7 +147,14 @@ body{
 .hobbies_elemento{
     width: 40%;
     padding: 38px 0 16px 16px;
-    background-color: white;
+    background-color: var(--color-terciario);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* Sombra pronunciada al elemento contenedor */
+}
+
+.skills_elemento:hover,
+.hobbies_elemento:hover{
+    transform: translateY(-5px); /* Eleva ligeramente la caja */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* Sombra pronunciada al elemento contenedor */
 }
 
 .skills_elemento img,
@@ -191,7 +209,7 @@ body{
 
 /* >>>>>>>>>>>> FORMACION ACADEMICA*/
 .formacion{
-    background-color: #EAF2FD;
+    background-color: var(--color-secundario);
     padding: 32px;
 }
 
@@ -218,7 +236,7 @@ body{
 .formacion_imagen{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--color-terciario);
     height: 150px;
     align-items: center;
 }
@@ -264,7 +282,7 @@ body{
 .experiencia_imagen{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--color-terciario);
     align-items: center;
 }
 
@@ -289,31 +307,22 @@ body{
 .boton_repo_encriptador,
 .boton_repo_arco,
 .boton_repo_tkd{
-    border: 1px solid #2A7AE4;
-    color: #2A7AE4;
+    border: 1px solid var(--color-cuaternario);
+    color: var(--color-cuaternario);
     padding: 12px 16px;
 }
 
 .boton_demo_encriptador,
 .boton_demo_arco,
 .boton_demo_tkd{
-    background-color: #2A7AE4;
-    color: white;
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
     padding: 12px 16px;
 }
 
-
-
-
-
-
-
-
-
-
 /* >>>>>>>>>>>> CONTACTO*/
 .contacto{
-    background-color: #EAF2FD;
+    background-color: var(--color-secundario);
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -347,7 +356,7 @@ body{
 }
 
 .contacto_elemento{
-    background-color: white;
+    background-color: var(--color-terciario);
     display: flex;
     flex-direction: column;
 }
@@ -357,7 +366,7 @@ body{
     font-size: 12px;
     width: auto;
     padding: 6px 12px;
-    color: #A2A2A2;
+    color: var(--color-quinto);
 }
 
 /* Afecta al texto que se escribe en los textarea & input */
@@ -388,20 +397,17 @@ body{
 }
 
 .contacto__formulario--boton{
-    background-color: #2A7AE4;
-    color: white;
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
     padding: 12px 16px;
 }
-
-
-
 
 /* >>>>>>>>>>>> FOOTER*/
 
 footer{
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: white;
+    background-color: var(--color-terciario);
     font-size: 16px;
     font-weight: 500;
     display: flex;
@@ -411,9 +417,6 @@ footer{
     align-items: center;
 
 }
-
-
-
 
 
 /* Media Queries */
