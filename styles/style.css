@@ -87,6 +87,12 @@ body{
     justify-content: center;
 }
 
+/* Se aplica al contenedor padre */
+.presentacion__redes ul:hover > :not(:hover){
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
 .presentacion__imagen{
     width: 98px;
     order: -1;
@@ -423,6 +429,7 @@ footer{
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    text-align: center;
 
 }
 
